@@ -6,3 +6,71 @@ title: Web Concepts Tooltip
 
 <h1>Web Concepts Tooltip</h1>
 <p>This is my work to build a tool tip that can be applied to any <span class="concept">API portal</a> text, and help provide education about important web concepts and specifications.</p>
+
+  <div class="example" id="example">
+  			<div class="target movable spaced" id="target">target</div>
+
+  			<div class="controls">
+  				<button data-action="toggle" class="static">toggle</button>
+
+  				<br>
+
+  				<div class="col">
+  					<h4>content</h4>
+  					<div class="group">
+  						<button data-action="content" data-arg="Move me toward edges!" class="active">text</button>
+  						<button data-action="content" data-arg="&lt;img src='http://i.imgur.com/6zBtrUl.png' width='64' height='64' alt='img'&gt;">image</button>
+  					</div>
+  				</div>
+
+  				<div class="col">
+  					<h4>type</h4>
+  					<div class="group">
+  						<button data-action="type" data-arg="none">none</button>
+  						<button data-action="type" data-arg="light" class="active">light</button>
+  						<button data-action="type" data-arg="success">success</button>
+  						<button data-action="type" data-arg="warning">warning</button>
+  						<button data-action="type" data-arg="error">error</button>
+  					</div>
+  				</div>
+
+  				<div class="col">
+  					<h4>effect</h4>
+  					<div class="group">
+  						<button data-action="effect" data-arg="none">none</button>
+  						<button data-action="effect" data-arg="fade">fade</button>
+  						<button data-action="effect" data-arg="slide" class="active">slide</button>
+  						<button data-action="effect" data-arg="grow">grow</button>
+  					</div>
+  				</div>
+
+  				<h4>place</h4>
+  				<div class="places">
+  					<div class="col group">
+  						<button data-action="place" data-arg="top" class="active">top</button>
+  						<button data-action="place" data-arg="top-left">top-left</button>
+  						<button data-action="place" data-arg="top-right">top-right</button>
+  					</div>
+  					<div class="col group">
+  						<button data-action="place" data-arg="left">left</button>
+  						<button data-action="place" data-arg="left-top">left-top</button>
+  						<button data-action="place" data-arg="left-bottom">left-bottom</button>
+  					</div>
+  					<div class="col group">
+  						<button data-action="place" data-arg="right">right</button>
+  						<button data-action="place" data-arg="right-top">right-top</button>
+  						<button data-action="place" data-arg="right-bottom">right-bottom</button>
+  					</div>
+  					<div class="col group">
+  						<button data-action="place" data-arg="bottom">bottom</button>
+  						<button data-action="place" data-arg="bottom-left">bottom-left</button>
+  						<button data-action="place" data-arg="bottom-right">bottom-right</button>
+  					</div>
+  				</div>
+
+  				<br>
+
+  				<h4>integration example</h4>
+  				<input type="text" placeholder="Focus me!" class="focusable">
+  			</div>
+  		</div>
