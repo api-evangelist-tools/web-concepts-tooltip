@@ -1,6 +1,6 @@
 title:        My Web Concept Tooltip
 description:  This is my web concepts and specs tooltip.
-url:          http://github-micro-tool.apievangelist.com
+url:          https://api-evangelist-tools.github.io/web-concepts-tooltip/
 
 version:      1.1.1
 
@@ -17,7 +17,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md",".
 github_user: api-evangelist-tools
 github_repo: web-concepts-tooltip
 
-production_url : http://github-micro-tool.apievangelist.com
+production_url : https://api-evangelist-tools.github.io/web-concepts-tooltip/
 
 image : http://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png
 imagesecure : https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png
