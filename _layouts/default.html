@@ -65,6 +65,32 @@
 
     </div>
 
+    <!-- JQuery -->
+    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- tether - https://github.com/HubSpot/tether-->
+    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/tether.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Github.js - https://github.com/michael/github -->
+    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/github.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Cookies.js - https://github.com/ScottHamper/Cookies -->
+    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/cookies.js"></script>
+
+    <!-- D3.js https://github.com/d3/d3 -->
+    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/d3.v3.min.js"></script>
+
+    <!-- js-yaml - https://github.com/nodeca/js-yaml -->
+    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/js-yaml.min.js"></script>
+
+    <!-- custom -->
+    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/utility.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+
+
 	<script type="text/javascript">
 
 	  var _gaq = _gaq || [];
@@ -81,69 +107,6 @@
 	</script>
 
     <script type="text/javascript">
-
-    /*global Base64, moment, store, tim */
-    jQuery(function ($) {
-    	'use strict';
-
-    	// ==========================================================================
-    	//   Tooltips
-    	// ==========================================================================
-    	(function () {
-    		var $tooltip = $('<div />');
-
-    		function showHideHandler(event) {
-    			/*jshint validthis:true */
-    			if (event.type === 'mouseleave') {
-    				$tooltip.remove();
-    				return;
-    			}
-
-    			var $el = $(this);
-    			var title = $el.data('tooltip');
-    			var place = $el.data('place') || 'top';
-    			var style = $el.data('style') || 'dark';
-
-    			$tooltip.attr('class', 'tooltip ' + place + ' ' + style).text(title).appendTo(document.body);
-    			var tWidth = $tooltip.outerWidth();
-    			var tHeight = $tooltip.outerHeight();
-    			var pos = $el.offset();
-    			var elWidth = $el.outerWidth();
-    			var elHeight = $el.outerHeight();
-
-    			switch (place) {
-    				case 'top':
-    					$tooltip.css({
-    						top: pos.top - tHeight,
-    						left: pos.left + Math.round(elWidth / 2) - Math.round(tWidth / 2)
-    					});
-    					break;
-    				case 'left':
-    					$tooltip.css({
-    						top: pos.top + Math.round(elHeight / 2) - Math.round(tHeight / 2),
-    						left: pos.left - tWidth
-    					});
-    					break;
-    				case 'right':
-    					$tooltip.css({
-    						top: pos.top + Math.round(elHeight / 2) - Math.round(tHeight / 2),
-    						left: pos.left + elWidth
-    					});
-    					break;
-    				case 'bottom':
-    					$tooltip.css({
-    						top: pos.top + elHeight,
-    						left: pos.left + Math.round(elWidth / 2) - Math.round(tWidth / 2)
-    					});
-    					break;
-    			}
-    		}
-
-    		$('[data-tooltip]').on('mouseenter mouseleave', showHideHandler);
-    	}());
-
-    });
-
 
         // project view log
   	   //$url = "http://project.api.kinlane.com/project/view/";
@@ -202,31 +165,6 @@
         footerProjects();
 
     </script>
-
-    <!-- JQuery -->
-    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/jquery.js" type="text/javascript" charset="utf-8"></script>
-
-    <!-- tether - https://github.com/HubSpot/tether-->
-    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/tether.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
-
-    <!-- Github.js - https://github.com/michael/github -->
-    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/github.js" type="text/javascript" charset="utf-8"></script>
-
-    <!-- Cookies.js - https://github.com/ScottHamper/Cookies -->
-    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/cookies.js"></script>
-
-    <!-- D3.js https://github.com/d3/d3 -->
-    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/d3.v3.min.js"></script>
-
-    <!-- js-yaml - https://github.com/nodeca/js-yaml -->
-    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/js-yaml.min.js"></script>
-
-    <!-- custom -->
-    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/utility.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://{{ site.github_user }}.github.io/{{ site.github_repo }}/js/mustache.js" type="text/javascript" charset="utf-8"></script>    
 
   </body>
 </html>
