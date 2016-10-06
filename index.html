@@ -7,12 +7,6 @@ title: Web Concepts Tooltip
 <h1>Web Concepts Tooltip</h1>
 <p>This is my work to build a tool tip that can be applied to any <span class="concept">API portal</a> text, and help provide education about important web concepts and specifications.</p>
 
-<!-- HTML to write -->
-<a href="#" data-toggle="tooltip" title="Some tooltip text. Some tooltip text. Some tooltip text. Some tooltip text.">Hover over me</a>
-
-
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-});
-</script>
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on top
+</button>
